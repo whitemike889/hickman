@@ -95,9 +95,11 @@
             
             <div class="col-xs-12 col-md-6">
                 <strong>Digital</strong>
-                <li>Brackets</li>
-                <li>Bootstrap</li>
-                <li>Laravel</li>
+                <ul class="list-inline">
+                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Info why I like Bootstrap.">Bootstrap</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Info why I like Laravel.">Laravel</a></li>
+                    <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="Info why I like Brackets.">Brackets</a></li>
+                </ul>
             </div>
             
             <div class="col-xs-12 col-md-6">
@@ -123,5 +125,11 @@
 <!-- javascript -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
 </body>
 </html>
